@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+:root {
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan-primary: hsl(178, 100%, 50%);
+
+  --bg-primary: hsl(217, 54%, 11%);
+  --card-primary: hsl(216, 50%, 16%);
+  --line-primary: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  background-color: var(--bg-primary);
+}
+
+main {
+  height: 100vh;
+}
+
+h1 {
+  color: var(--white);
+  font-weight: 600;
+}
+
+p {
+  font-size: 18px;
+  color: var(--soft-blue);
+  font-weight: 300;
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  height: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--card-primary);
+  border-radius: 8px;
+  padding: 1.5rem;
+  width: 350px;
+}
+
+.card img:first-child {
+  border-radius: inherit;
+}
+
+.card__title {
+  margin-top: 12px;
+}
+
+.card__para {
+  margin: 12px auto;
+}
+
+.stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stats p {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.stats__eth {
+  color: var(--cyan-primary);
+  font-weight: 400;
+  margin-left: 4px;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+
+  border-top: 1px solid var(--line-primary);
+}
+
+.avatar img {
+  width: 35px;
+  margin-top: 10px;
+}
+
+.avatar span {
+  color: var(--white);
+}
+
+.attribution {
+  font-size: 16px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* 
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Soft blue: hsl(215, 51%, 70%)
+- Cyan: hsl(178, 100%, 50%)
+
+### Neutral
+
+- Very dark blue (main BG): hsl(217, 54%, 11%)
+- Very dark blue (card BG): hsl(216, 50%, 16%)
+- Very dark blue (line): hsl(215, 32%, 27%)
+- White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 18px
+
+### Font
+
+- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+- Weights: 300, 400, 600 */
